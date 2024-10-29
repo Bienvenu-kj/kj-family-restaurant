@@ -1,0 +1,307 @@
+:root{
+    /* important */
+    --jaune-principal : #efc000;
+    --rouge-accent : #d13f00;
+    --bleu-complementaire : #2e3d49;
+    --blanc-neutre : #f7f5f2;
+    --vert-secondaire : #3c704d;
+
+    /* aussi important */
+    --gris-complementaire : #f9f9f9;
+/* style globale */
+
+    /* boutons */
+button, #elements_menu>ul li:nth-child(3),#contact>section>section form input[type="button"]{
+    color : var(--jaune-principal);
+    font-weight: 600;
+    border : none;
+    background-color : var(--rouge-accent);
+    transition : all ease-in-out 0.5s;
+}
+   
+
+button:hover, #banner_btn:hover,  #elements_menu>ul li:nth-child(3):hover, #contact>section>section form input[type="button"]:hover{
+    background-color: #3c704d;
+} 
+
+}
+body{
+    background-color: var(--blanc-neutre);
+}
+/* style de l'en-tête de la page */
+
+header{
+    background-color: #2e3d49d3;
+    background-image: url(images/pexels-life-of-pix-67468.webp);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    height: 40rem;
+    border-bottom: 2px solid #3c704d;
+}
+    #elements_menu>ul li:nth-child(1),
+    #elements_menu>ul li:nth-child(2){
+        align-self: center;
+    }
+     #elements_menu>ul li:nth-child(3){
+    padding : 0.7rem 1.2rem;
+    border-radius : 0.5rem;
+    }
+        header li a{
+            position: relative;
+            color : var(--jaune-principal);
+            font-weight: 600;
+            transition: all ease-in-out 0.2s;
+        }
+        header li a:hover::before{
+            position: absolute;
+            left : -0.5rem ;
+            content: '';
+            width : 2rem;
+            z-index: 100;
+            bottom: -1rem;
+            height : 0.18rem;
+            background-color: #3c704d;
+
+        }
+
+    header>div:nth-child(2) h1{
+        color : var(--jaune-principal);
+    }
+    header>div:nth-child(2) h2{
+        color : var(--gris-complementaire);
+    }
+    header>div:nth-child(2) p{
+        font-size: 1.5em;
+        color : var(--gris-complementaire);
+    }
+    #banner_btn{
+        border : none;
+        color : var(--jaune-principal);
+        font-weight: 600;
+        background-color : var(--rouge-accent);
+    }
+    #banner_btn a{
+        text-decoration : none;
+        color : var(--jaune-principal);
+        font-weight: 600;
+    }
+
+
+/* style de la partie principale  */
+    #menu_plats{
+        background-color: var(--bleu-complementaire);
+    }
+
+    main h2,  main h3, main h4{
+        position: relative;
+        color : var(--jaune-principal);
+    }
+    main img{
+        border-radius : 0.5rem;
+        border: 0.06rem solid #3c704d6b;
+    }
+    main h2::after{
+         content : "";
+         width : 4rem;
+         position : absolute;
+         height : 0.3rem;
+         bottom : -0.5rem;
+         left : 50%;
+         border-radius: 0.5rem;
+         transform: translateX(-50%);
+         background-color : var(--vert-secondaire);
+    }
+    #menu_plats h3::after{
+        content : "";
+        position: absolute;
+        bottom: -2.4rem;
+        left : 50%;
+        clip-path: polygon(0 0, 100% 0, 52% 100%, 52% 100%);
+        transform: translateX(-50%);
+        height: 2rem;
+        width: 2rem;
+        background-color: #3c704d;
+    }
+
+    #menu_plats>section>section>div{
+        border-radius : 0.5rem;
+        box-shadow: 0 0 1rem /* #3c704d  */#3c704d91; ;
+        border: 0.03rem solid #3c704d91;
+    }
+    .plats{
+        transition: all ease-in-out 0.25s;
+    }
+    .plats:hover{
+            transform: translate(2px) scale(1.009);
+    }
+
+
+    #contact{
+        padding: 0 5rem;;
+    }
+    #contact>section>section{
+        position: relative;
+        border-radius : 0.5rem;
+        border: 0.06rem solid #3c704d6b;
+        width: 40%;
+        height: auto;
+        padding : 2rem;
+        box-shadow: #3c704d6b 0 0 1rem;
+        background-color:  var(--gris-complementaire);
+    }
+    #contact>section>section .couvert{
+        position : absolute;
+        width: 100%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease-in-out;
+        background-color: #2e3d49;
+        border-radius: 0.5rem;
+    }
+     /* demies sections de la section contact */
+     #contact>section>section:hover .couvert{
+        height: 100%;
+        opacity: 1;
+    }
+    #contact>section>section:hover input:not(input[type="button"]){
+        background-color: #293741;
+        box-shadow: 0 0 1rem #3c704d;
+        color : var(--blanc-neutre);
+    }
+    #contact>section>section:hover p{
+        font-weight: 600;
+        color : #B2B1AE;
+    }
+    #contact>section>section p{
+        color : #3c704d;
+    }
+    #contact>section>section .adresMail{
+        letter-spacing: 0.053rem;
+    }
+    #contact>section>section:hover .cord{
+        border-left-color: #B2B1AE;
+    }
+    #contact>section>section>section{
+        z-index: 10;
+        padding: 0 2rem;
+        border-left: 0.2rem solid #3c704d;
+        transition: all 0.5s ease-in-out;
+    }
+    #contact h3{
+        text-align: center;
+    }
+
+    /* application du style de contour personnalisé à tous les éléments pouvant recevoir
+    le focus par défaut */
+    :focus-visible{
+        outline : .2rem solid var(--vert-secondaire);
+        outline-offset: 0.08rem;
+    }
+
+    /* personalition du contour lors du focus des inputs */
+    #contact>section>section form input:not(input[type="button"]):focus{
+        outline: 0.2rem solid var(--vert-secondaire);
+    }
+    #contact>section>section form input:not(input[type="button"]){
+       border: 0.06rem solid #3c704d6b;
+       padding: 0.7rem;
+       font-weight: 600;
+       border-radius: 0.5rem;
+    }
+ 
+
+footer{
+    margin-top: 20rem;
+    background-color: #2e3d49;
+}
+footer>div:nth-child(1){
+    column-gap: 0.5rem;
+    align-items : center;
+    display : flex;
+    justify-content : center;
+}
+footer>div:nth-child(1)>a{
+    width : 2.2rem;
+    height : 2.2rem;
+    text-decoration : none;
+    border : 0.08rem solid var(--vert-secondaire);
+    color : var(--jaune-principal);
+    transition : all cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+footer>div:nth-child(1)>a ion-icon {
+    height: 100%;
+    width: 100%;
+    color : var(--jaune-principal); 
+}
+footer>div:nth-child(1)>a:hover{
+    box-shadow: #3c704d 0 0 1rem;
+    transform: translate(1px) scale(1.009);
+}
+
+footer h2{
+    color : var(--blanc-neutre);
+}
+
+footer .copyRight{
+    color : var(--jaune-principal);
+}
+footer .credit{
+    box-shadow: 0 0 1rem #3c704d;
+    padding : 1rem;
+}
+footer #credit{
+    padding-top: 0.5rem;
+    border-top: #3c704d 0.08rem solid;
+}
+footer h3{
+    color : #dddbd7;
+}
+footer a{
+    color : #dddbd7;
+}
+
+footer p{
+    color : #dddbd7;
+    font-weight: 600;
+}
+footer .luc{
+    border : solid 0.06rem var(--jaune-principal);
+    padding : 0.003rem;
+    border-radius: 50%;
+    color : var(--jaune-principal);
+}
+
+footer footer>div:nth-child(2) a:hover{
+    color : var(--vert-secondaire);
+    background-color : var(--gris-complementaire);
+    padding : 0.1rem .2rem;
+    border-radius : 0.15rem;
+}
+@keyframes borderChange {
+    0%{
+       border : 0.2rem solid #3c704d; 
+       box-shadow: 0 0 1rem #3c704d;
+    }
+    50%{
+        border : var(--rouge-accent) 0.2rem solid;
+        box-shadow: 0 0 1rem var(--rouge-accent);
+    }
+    100%{
+        border :  0.2rem var(--jaune-principal) solid;
+        box-shadow: 0 0 1rem var(--jaune-principal);
+    }
+}
+#auteur{
+    transition : animation ease-in-out 0.5s;
+}
+#auteur:hover{
+    padding: 0.5rem;
+    animation: borderChange 1.9s ease 0s infinite normal;
+    animation-fill-mode: forwards;
+    
+}
+
+    
+

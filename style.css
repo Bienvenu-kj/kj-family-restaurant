@@ -1,0 +1,223 @@
+
+:root{
+    /* Pour les blocs */
+    --marge-inter-gauche-droit : 5rem;
+    --margin-ext-gauche-droit : 5rem;
+    --marg-int-haut-bas : 20rem;
+    --marg-ext-haut-bas : 20rem;
+
+    /* pour les elements texts */
+    --banner-princ-title : 2.5em;
+    --princ-title : 2em;
+    --sous-title : 1.7rem;
+    --moyen-title : 1.5rem;
+    --par-moyEl-size : 1.2em;
+    --simple-element : 1em;
+    
+    /* pour les elements des blocs entre eux */
+    --plus-loin-espacement-hb : 7rem;
+    --plus-pres-especement-hb : 5rem;
+    --moyen-pres-especement : 2rem;
+    --plus-loin-espacement-gd-hb : 3rem;
+    --plus-pres-espacement-gd-hb : 1rem;
+
+}
+/* Style globale */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight : 500;
+}
+
+body{
+    font-size: 16px;
+}
+
+button, #contact>section>section form input[type="button"]{
+    font-size: var(--par-moyEl-size);
+    padding: var(--plus-pres-espacement-gd-hb) var(--plus-loin-espacement-gd-hb);
+    border-radius : 0.5rem;
+}
+/* fin style globale */
+
+/* Entete de la page */
+
+header{
+    padding: 2rem var(--marge-inter-gauche-droit);
+    display: flex;
+    row-gap: 5rem;
+    position: relative;
+    flex-direction: column;
+}
+
+    header>div:nth-child(1){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        #elements_menu>ul{
+            display: flex;
+            column-gap: 2rem;
+            list-style: none;
+        }
+            #elements_menu>ul a{
+                text-decoration: none;
+            }
+
+    header>div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        row-gap: 6rem;
+        align-items: center;
+    }
+    header>div:nth-child(2) h1{
+        font-size: var(--moyen-title);
+    }
+    header>div:nth-child(2) h2{
+        margin-top : 2rem;
+        font-family : 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: var(--banner-princ-title);
+    }
+    header>div:nth-child(2) p{
+        margin-top: 3rem;
+    }
+
+    #menu_bar #hambourg_menu{
+        display: none;
+    }
+/* style pour la partie principale de la page */
+/* main{
+    padding : var(--marg-int-haut-bas) var(--marge-inter-gauche-droit); 
+} */
+    #menu_plats{
+        padding: var(--marg-int-haut-bas) 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--plus-loin-espacement-hb);
+    }
+        #menu_plats h2 {
+            font-size: var(--princ-title);
+            text-align: center;
+        } 
+
+        #menu_plats>section{
+            display: flex;
+            flex-direction: column;
+            row-gap: var(--plus-pres-especement-hb);
+        }
+            #menu_plats h3{
+                font-size: var(--moyen-title);
+                text-align: center;
+            }
+
+            #menu_plats>section>section{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: var(--plus-loin-espacement-gd-hb) var(--plus-pres-espacement-gd-hb);
+            }
+                #menu_plats>section>section>div{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: var(--moyen-pres-especement);
+                    width: 19.5rem;
+                    align-items: center;
+                    justify-content: center;
+                    padding : var(--moyen-pres-especement);
+                }
+                    #menu_plats>section>section img{
+                        width: 100%;
+                        height: 50%;
+                    }
+
+    #contact{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--plus-loin-espacement-hb);
+        margin-top: var(--marg-ext-haut-bas);
+    }
+        #contact h2{
+            font-size: var(--princ-title);
+            text-align: center;
+        }
+        #contact>section {
+            display: flex;
+            justify-content: space-between;
+        }
+            #contact>section>section{
+                display:flex;
+                flex-direction: column;
+                row-gap: var(--plus-pres-especement-hb);
+            }
+                #contact>section>section>section{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: var(--moyen-pres-especement);
+                }
+                    #contact>section>section>section>div{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: var(--plus-pres-espacement-gd-hb);
+                    } 
+                    #contact>section>section form{
+                        z-index: 10;
+                        display: flex;
+                        text-align: center;
+                        flex-direction: column;
+                        row-gap: var(--moyen-pres-especement);
+                    }
+                    
+                        #contact>section>section form div:nth-child(1){
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: var(--plus-pres-espacement-gd-hb);
+                        }
+
+/* fin style de la partie principale */
+
+/* style de la pied de page */
+
+footer{
+    padding : 3rem var(--marge-inter-gauche-droit);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--moyen-pres-especement);
+}
+    footer h2{
+        text-align: center;
+        font-size: var(--par-moyEl-size);
+    }
+    footer h3{
+        font-size: var(--simple-element);
+    }
+    footer>div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--moyen-pres-especement);
+    }
+        footer>div:nth-child(2)>div{
+            display: flex;
+            text-align: justify;
+            flex-direction: column;
+            row-gap: var(--plus-pres-espacement-gd-hb);
+        }
+            footer>div:nth-child(2)>div>div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: justify;
+                row-gap: 0.8rem;
+            }
+            footer>div:nth-child(2)>div>div a{
+                text-decoration: none;
+            }
+            footer>div:nth-child(2)>div>div ul{
+                list-style: none;
+                position: relative;
+                left: 1.3rem;
+            }
+            

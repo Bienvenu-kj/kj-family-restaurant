@@ -1,0 +1,165 @@
+@media (max-width: 580px) {
+    #logo img {
+        width: 7rem;
+        height: 5rem;
+    }
+    #elements-menu {
+        transition: 0.4s ease;
+        display: flex;
+        transform: translate(-100%, -100%);
+        position: absolute;
+        background: linear-gradient(#2e3d49, #3c704d);
+        top: 0;
+        height: 100%;
+        left: 0;
+        align-items: center;
+        z-index: 77;
+        justify-content: center;
+        width: 100%;
+        box-shadow: 0 0.5rem 1rem #3c704d;
+    }
+    #menu-bar #hamburger-menu {
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.33rem;
+    }
+    #menu-bar #hamburger-menu .hamburger-menu-item {
+        width: 2rem;
+        height: 0.18rem;
+        transition: all 0.5s;
+        background-color: #f7f5f2;
+    }
+    #hamburger-menu.view .hamburger-menu-item:nth-child(2) {
+        opacity: 0;
+    }
+    #hamburger-menu.view .hamburger-menu-item:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #hamburger-menu.view .hamburger-menu-item:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -10px);
+    }
+    #elements-menu.view {
+        transform: translate(0);
+    }
+    #elements-menu.view ul {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+}
+
+@media (max-width: 950px) {
+    #contact {
+        padding: 0 3rem;
+    }
+    #menu-plats {
+        padding: 20rem 3rem;
+    }
+}
+
+@media (max-width: 868px) {
+    #menu-plats {
+        padding: 20rem 2rem;
+    }
+    #contact {
+        padding: 0 2rem;
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width: 784px) {
+    header > div:nth-child(2) h1 {
+        font-size: 1.35em;
+    }
+    header > div:nth-child(2) h2 {
+        margin-top: 2rem;
+        font-size: 2em;
+    }
+    header > div:nth-child(2) p {
+        font-size: 1.2em;
+        color: var(--gris-complementaire);
+    }
+    #menu-plats {
+        padding: 20rem 5rem;
+    }
+    #menu-plats > section > section > div {
+        width: 100%
+    }
+    #contact > section {
+        align-items: center;
+        row-gap: 2rem;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    #contact > section > section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 714px) {
+    header {
+        padding: 2rem;
+    }
+    header > div:nth-child(2) h1 {
+        font-size: 1.3em;
+    }
+    header > div:nth-child(2) h2 {
+        font-size: 2em;
+    }
+    header > div:nth-child(2) p {
+        margin-top: 3rem;
+    }
+    #menu-plats {
+        padding: 20rem 2rem;
+    }
+    #contact {
+        padding: 0 2rem;
+    }
+    #contact > section > section {
+        padding: 1.5rem;
+    }
+    #contact > section > section > section {
+        padding: 0 0rem;
+        border: none;
+    }
+    #adresMail {
+        overflow-wrap: break-word;
+    }
+    footer {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 564px) {
+    header {
+        height: 43rem;
+    }
+    header > div:nth-child(2) {
+        text-align: center;
+    }
+    header > div:nth-child(2) h1 {
+        font-size: 1.2em;
+    }
+    header > div:nth-child(2) h2 {
+        font-size: 1.6em;
+    }
+    header > div:nth-child(2) p {
+        font-size: 1.1em;
+        color: var(--gris-complementaire);
+    }
+}
+
+@media (max-width: 289px) {
+    button, #contact > section > section form input[type="button"] {
+        font-size: 1em;
+        padding: 0.5rem 0.7rem;
+        border-radius: 0.5rem;
+    }
+    #reserver input[type="button"] {
+        width: 100%;
+    }
+    #menu-plats > section > section > div {
+        padding: 1rem;
+    }
+}
