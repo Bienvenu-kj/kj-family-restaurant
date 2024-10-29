@@ -1,0 +1,19 @@
+# Dossier des dépendances
+node_modules/
+
+# Fichiers de configuration de l'éditeur
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers de log
+*.log
+
+# Fichiers temporaires
+*~
+.DS_Store
+Thumbs.db
+
+# Fichiers de build
+/dist/
+/build/
