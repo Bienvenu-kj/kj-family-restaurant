@@ -2,7 +2,6 @@
 
 Bienvenue sur le projet **KJ Family Restaurant** ! Ce site web propose une page d'accueil pour un restaurant fictif, incluant des informations sur les plats du restaurant et une section de contact.
 
-![Aperçu du Site](url_vers_image_du_site.png)
 
 ## Table des Matières
 - [Aperçu du Projet](#aperçu-du-projet)
