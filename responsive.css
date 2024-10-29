@@ -54,9 +54,6 @@
         align-items : center;
     } */
 
-
-
-
     /* nav menu elements */
     #elements_menu.view{
         transform: translate(0);
@@ -108,7 +105,12 @@
     }
     #menu_plats>section>section>div{
         width : 100%
-    }
+       }
+       #contact{
+        padding : 0 5rem;
+        overflow-wrap: break-word;
+        }
+       
     #contact>section{
         align-items : center;
         row-gap: 2rem;
