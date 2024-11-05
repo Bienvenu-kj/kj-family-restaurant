@@ -265,6 +265,7 @@ footer a{
 footer p{
     color : #dddbd7;
     font-weight: 600;
+    text-align :  center;
 }
 footer .luc{
     border : solid 0.06rem var(--jaune-principal);
