@@ -295,6 +295,7 @@ footer footer>div:nth-child(2) a:hover{
     }
 }
 #auteur{
+    text-align : center;
     transition : animation ease-in-out 0.5s;
 }
 #auteur:hover{
