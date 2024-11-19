@@ -191,6 +191,7 @@ header{
     }
     #contact h3{
         text-align: center;
+        font-weight : bold;
     }
 
     /* application du style de contour personnalisé à tous les éléments pouvant recevoir
