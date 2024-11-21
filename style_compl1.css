@@ -28,7 +28,7 @@ background-color: var(--blanc-neutre);
 /* style de l'en-tête de la page */
 header{
 background-color: #2e3d49d3;
-background-image: url(../images_opt/pexels-life-of-pix-67468.webp);
+background-image: url(images/pexels-life-of-pix-67468.webp);
 background-size: cover;
 background-blend-mode: multiply;
 background-position: center;
