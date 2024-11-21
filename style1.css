@@ -99,6 +99,7 @@ row-gap: var(--plus-loin-espacement-hb);
 #menu_plats h2 {
 font-size: var(--princ-title);
 text-align: center;
+padding-left: 0.5rem;
 }
 #menu_plats > section {
 display: flex;
@@ -106,6 +107,9 @@ flex-direction: column;
 row-gap: var(--plus-pres-especement-hb);
 }
 #menu_plats h3 {
+display : flex;
+flex-direction : column;
+row-gap : 0.5rem;
 font-size: var(--moyen-title);
 text-align: center;
 }
@@ -136,6 +140,7 @@ row-gap: var(--plus-loin-espacement-hb);
 margin-top: var(--marg-ext-haut-bas);
 }
 #contact h2 {
+padding-left: 0.5rem;
 font-size: var(--princ-title);
 text-align: center;
 }
@@ -157,6 +162,9 @@ row-gap: var(--moyen-pres-especement);
 display: flex;
 flex-direction: column;
 row-gap: var(--plus-pres-espacement-gd-hb);
+}
+#contact h4{
+  padding-left: 0.5rem;
 }
 #contact > section > section form {
 z-index: 10;
