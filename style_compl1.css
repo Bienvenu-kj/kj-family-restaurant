@@ -178,9 +178,7 @@ border-left: 0.2rem solid #3c704d;
 transition: all 0.5s ease-in-out;
 }
 #contact h3{
-display : flex;
-flex-direction : column;
-row-gap : 0.5rem
+padding-left: 0.5rem;
 text-align: center;
 }
 /* application du style de contour personnalisé à tous les éléments pouvant recevoir
